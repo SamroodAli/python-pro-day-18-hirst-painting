@@ -11,13 +11,16 @@ for color in colors:
     b = color.rgb.b
     colors_tuples.append((r, g, b))
 
-print(colors_tuples)
 # code for turtle
 t = Turtle()
+# code for screen
 scr = Screen()
 scr.colormode(255)
 t.penup()
+t.hideturtle()
 t.speed(0)
+
+# code to set custom x and y co-ordinate
 sety = -200
 t.setposition(-200, -200)
 for position in range(1, 101):
